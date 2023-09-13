@@ -15,7 +15,7 @@ export default function Header() {
       </nav>
       <div>
          <div className="description">
-       <h3>John Wick 3: <br /> Parabellum</h3>
+       <h3>John Wick 3: <br /> Parabelkanckajc</h3>
        <div className="stats"><img src={IMDBlogo} alt="IMDB Logo" /> <p>86.6/100</p> <div><img src={TomatoIcon} alt="" /><p>97%</p></div></div>
        <p>John Wick is on the run after killing a member of the international assasins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
        <button>Watch trailer</button>
