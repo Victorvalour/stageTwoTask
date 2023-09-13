@@ -1,0 +1,69 @@
+.header-container {
+  flex-direction: column;
+  height: 40%;
+  width: 100%;
+  box-sizing: content-box;
+  background-image: url("./images/Poster.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffff;
+  padding: 20px;
+}
+input {
+  border: 2px solid #ffff;
+  text-align: center;
+  width: 350px;
+  height: 30px;
+  color: #ffff;
+  background: transparent;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0px;
+  width: 100%;
+}
+.movieGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  margin: 10px 5px;
+  max-width: 200px;
+}
+.card > h3,
+p {
+  margin: 8px;
+  padding: 0px;
+}
+.movieImage {
+  width: 200px;
+}
+.description {
+  margin-left: 20%;
+  max-width: 25%;
+  max-height: 15%;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 300px) {
+  .header-container {
+    font-size: 0.5em;
+  }
+}
