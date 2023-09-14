@@ -30,6 +30,10 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
+.movieGrid :hover {
+  transform:scale(1.01);
+  
+}
 .menu {
   display: flex;
   align-items: center;
@@ -38,11 +42,20 @@ nav {
   display: flex;
   align-items: center;
 }
+.country {
+  text-decoration: none;
+}
+.movie-title {
+  text-decoration: none;
+}
 
 .card {
   margin: 10px 5px;
   max-width: 200px;
+  text-decoration: none;
+  color: black;
 }
+
 .card > h3,
 p {
   margin: 8px;

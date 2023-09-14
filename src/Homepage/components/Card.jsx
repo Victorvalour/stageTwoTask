@@ -6,17 +6,29 @@ import { Link } from "react-router-dom"
 
 const IMGPATH = 'https://image.tmdb.org/t/p/w500'
 
-const  Card =({title, poster_path, popularity, id, genres}) => {
+const  Card =({title, poster_path, popularity, id, release_date, production_countries,  genres}) => {
    const pop = popularity.toFixed(1)
 return (
 
  
-         <Link to={`/Movie/${id}`} className="card">
-         <img className="movieImage"src={IMGPATH+poster_path} alt="" />
-         <p>USA, 2016 - Current</p>
-         <h3>{title}</h3>
+         <Link to={`/Movie/${id}`} style={{textDecoration: 'none'}} 
+       >
+         <div className="card" data-testid="movie-card">
+
+         <img className="movieImage"src={IMGPATH+poster_path} alt="Image Poster" data-testid="movie-poster"/>
+
+         <div className="country/date">
+            <p className="country">USA
+</p>
+            <p data-testid="movie-release-date">{release_date
+}</p>
+            </div>
+
+         <h3 className="movie-title" data-testid="movie-title">{title}</h3>
+
          <div className="stats"><img src={IMDBlogo} alt="IMDB Logo" /> <p>{pop}/100</p> <div><img src={TomatoIcon} alt="" /><p></p></div></div>
          <p>Action, adventure</p>
+         </div>
      </Link>
      ) 
 }
