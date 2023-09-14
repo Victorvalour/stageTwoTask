@@ -5,12 +5,14 @@ export default function Sidebar() {
     return (
         <section className="sidebar">
             <div className="head">
-                <div></div>
-                <h3>Movie</h3>
+              
+            <img src="tv.png" alt="TV logo" />
+                <h3>MovieBox</h3>
             </div>
             <div className="nav">
+                <div>ewde</div>
                 <div></div>
-                <div></div>
+                <img src="Poster.jpg" alt="TV logo" />
                 <div></div>
                 <div></div>
             </div>

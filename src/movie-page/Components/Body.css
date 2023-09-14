@@ -51,3 +51,10 @@ flex-wrap: wrap;
 .bottom-right {
     background-color: burlywood;
 }
+
+@media (max-width:500px) {
+    .body {
+        margin:5px;
+
+    }
+}

@@ -9,7 +9,7 @@ export default function Body(props) {
        <div className="body-bottom">
         <div className="bottom-left">
             <div className="info">
-                <h3>{props.title} </h3>
+                <h3 className="title" data-testid="movie-title">{props.title} </h3>
                 <h3>{props.release_date}</h3>
                 <h3>PG-13</h3>
                 <h3>2h 10m</h3>
