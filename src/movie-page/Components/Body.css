@@ -1,0 +1,30 @@
+
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+}
+
+.video-container {
+    background-color: aqua;
+    width: 100%;
+    height: 300px ;
+    width: inherit;
+}
+.body-bottom {
+    display: flex;
+    background-color: blue;
+    
+}
+.info {
+display: flex;
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: column;
+    background-color: chartreuse;
+}
+.bottom-right {
+    background-color: burlywood;
+}
