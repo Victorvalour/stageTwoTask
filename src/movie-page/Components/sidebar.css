@@ -2,7 +2,7 @@
     width: 250px;
     height: 100vh;
     position: fixed;
-    border: 2px solid #000000;
-    
-    border-top-right-radius: 5%;
+    border: 2px solid #666666;
+
+    border-top-right-radius: 25px;
 }

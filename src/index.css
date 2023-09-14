@@ -1,6 +1,6 @@
 .header-container {
   flex-direction: column;
-  height: 40%;
+  height: 450px;
   width: 100%;
   box-sizing: content-box;
   background-image: url("./images/Poster.jpg");
@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   color: #ffff;
   padding: 20px;
+  font-family: 'DM Sans', sans-serif;
 }
 input {
   border: 2px solid #ffff;
@@ -26,17 +27,25 @@ nav {
   padding: 0px;
   width: 100%;
 }
+.country-date {
+display: flex;
+}
 .movieGrid {
   display: flex;
   flex-wrap: wrap;
+  font-family: 'DM Sans', sans-serif;
 }
 .movieGrid :hover {
-  transform:scale(1.01);
+
   
 }
 .menu {
   display: flex;
   align-items: center;
+  margin-right: 25px;
+}
+.menu > h3 {
+  margin-right: 15px;
 }
 .name {
   display: flex;
@@ -54,8 +63,11 @@ nav {
   max-width: 200px;
   text-decoration: none;
   color: black;
+  
 }
-
+.card:hover {
+  transform:scale(1.03);
+}
 .card > h3,
 p {
   margin: 8px;
@@ -65,9 +77,17 @@ p {
   width: 200px;
 }
 .description {
-  margin-left: 20%;
-  max-width: 50%;
-  max-height: 15%;
+  margin-left: 12%;
+  max-width: 300px;
+  max-height: 250px;
+}
+.description > h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+.description > p {
+  font-size: 18px;
+
 }
 .stats {
   display: flex;

@@ -17,7 +17,7 @@ return (
 
          <img className="movieImage"src={IMGPATH+poster_path} alt="Image Poster" data-testid="movie-poster"/>
 
-         <div className="country/date">
+         <div className="country-date">
             <p className="country">USA
 </p>
             <p data-testid="movie-release-date">{release_date
