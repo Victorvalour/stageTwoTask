@@ -1,10 +1,10 @@
 .header-container {
   flex-direction: column;
-  height: 500px;
+  height: 400px;
   width: inherit;
   box-sizing: content-box;
   background-image: url("./images/Poster.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffff;
   padding: 10px;
@@ -127,10 +127,12 @@ footer {
   display: flex;
   font-weight: 600;
 }
+
 @media (max-width: 700px) {
   .header-container {
-    font-size: 0.8rem;
-    height: auto;
+    font-size: 0.9rem;
+    height: 220px;
+    background-size: cover;
   
   }
 .home-nav img {
@@ -145,14 +147,35 @@ footer {
     width: 200px;
   }
   .description h3 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0px;
   }
   .description img {
     width: 15px;
   }
   .description p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin: 0px;
   }
+  .card {
+    margin: 20px 10px;
+    max-width: 150px;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+  }
+  .movieImage{
+    max-width: 150px;
+  }
+  .card h3 {
+    margin: 0px;
+  }
+  .card p {
+    margin:5px
+  }
+  .favourite {
+    width: 30px;
+    height: 30px;
+  }
+
 }
