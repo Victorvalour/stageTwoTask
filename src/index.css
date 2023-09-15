@@ -7,7 +7,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   color: #ffff;
-  padding: 20px;
+  padding: 10px;
   font-family: 'DM Sans', sans-serif;
 }
 input {
@@ -53,10 +53,7 @@ display: flex;
   flex-wrap: wrap;
   font-family: 'DM Sans', sans-serif;
 }
-.movieGrid :hover {
 
-  
-}
 .menu {
   display: flex;
   align-items: center;
@@ -130,8 +127,17 @@ footer {
   display: flex;
   font-weight: 600;
 }
-@media (max-width: 300px) {
+@media (max-width: 700px) {
   .header-container {
-    font-size: 0.5em;
+    font-size: 0.8rem;
+  
+  }
+.home-nav img {
+  width:35px;
+}
+  input{
+    width: 200px;
+    height: 20px;
+    padding:0px
   }
 }

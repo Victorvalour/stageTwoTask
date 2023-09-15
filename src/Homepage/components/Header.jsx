@@ -8,7 +8,7 @@ import TomatoIcon from "../images/TomatoIcon.png"
 
 export default function Header() {
    return ( <div className="header-container">
-      <nav>
+      <nav className="home-nav">
          <div className="name"><img src={Tvlogo} alt="" /> <h3>MovieBox</h3></div>
          <div><input type="text" placeholder="What do you want to watch?"/></div>
          <div className="menu"><h3>Sign In</h3><img src={Menu} alt="" /></div>
