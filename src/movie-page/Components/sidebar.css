@@ -16,10 +16,7 @@
     height: 4em;
 }
  
-.sidebar::-webkit-scrollbar-track {
 
-}
- 
 .sidebar::-webkit-scrollbar-thumb {
   background-color: #fac3d0;
   outline: 1px solid #2f2a2b;
