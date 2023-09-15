@@ -130,6 +130,7 @@ footer {
 @media (max-width: 700px) {
   .header-container {
     font-size: 0.8rem;
+    height: auto;
   
   }
 .home-nav img {
