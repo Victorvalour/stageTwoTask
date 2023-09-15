@@ -13,15 +13,33 @@ const APILINK = 'https://api.themoviedb.org/3/movie/top_rated?api_key=c7b552ce19
 
 export default function Body() {
     const [movies, setMovies] = useState([]);
-
+    const [isPending, setIsPending] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(APILINK).then((res) => res.json()).then(data=> {
+        fetch(APILINK).then((res) => {
+            if (!res.ok) {
+                throw Error('Opps! Something went wrong...')
+            }
+         return  res.json()
+         })
+            .then(data=> {
             setMovies(data.results.slice(0, 10));
+            setIsPending(false);
+            setError(null)
+        })
+        .catch(err => {
+            setIsPending(false)
+            setError(err.message);
+             
         })
     }, [])
    return ( <section>
+       
          <h2>Top Rated Movie</h2>
+        {error && <div>{ error }</div>}
+        
+         {isPending && <h1 style={{color:"red"}}>Loading...</h1>}
     <div className="movieGrid">
         {movies.map((movieData)=><Card key={movieData.id} {...movieData}/>)}
     </div>
