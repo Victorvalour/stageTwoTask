@@ -9,8 +9,8 @@ const IMGPATH = 'https://image.tmdb.org/t/p/w500'
 
 const  Card =({title, poster_path, popularity, id, release_date, production_countries,  genres}) => {
    const pop = popularity.toFixed(1)
-   const handleClick =(e) => {
-      e.stopPropagation()
+   const handleClick =() => {
+    
       alert("Added to Favourites")}
 return (
 
