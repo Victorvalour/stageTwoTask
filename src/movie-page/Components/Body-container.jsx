@@ -3,6 +3,8 @@ import "./Body.css"
 import ImageGrid from "../images/image grid.png"
 export default function Body(props) {
     console.log(props)
+    let rating
+    if (props.adult == false) {rating = "PG-13"} else {rating = "PG-18"}
     return (
         <section className="body">
        <div className="video-container"></div>
@@ -10,15 +12,17 @@ export default function Body(props) {
         <div className="bottom-left">
             <div className="info">
                 <h3 className="title" data-testid="movie-title">{props.title} </h3>
-                <h3>{props.release_date}</h3>
-                <h3>PG-13</h3>
-                <h3>2h 10m</h3>
+                <h3 data-testid="movie-release-date">{props.release_date}</h3>
+                <h3>{rating}</h3>
+                <h3 data-testid="movie-runtime">{props.runtime}</h3> <h3>mins</h3>
 
                 <p className="genre">Action</p>
                 <p className="genre">Drama</p>
+      
+          
                  </div>
 
-                 <p>{props.overview}</p>
+                 <p data-testid="movie-overview">{props.overview}</p>
                  <div className="creators">
 
                  <p>Director: <span className="names"> Joseph Kosinski</span></p>

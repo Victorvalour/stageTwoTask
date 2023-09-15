@@ -2,7 +2,6 @@
 .body {
     display: flex;
     flex-direction: column;
-
     width: 100%;
     margin-left:215px;
     margin-right: 5px;
@@ -119,6 +118,8 @@ border: none;
 .image-grid {
 width: 100%;
 }
+
+
 @media (max-width:700px) {
     .body {
         margin-left:5px;

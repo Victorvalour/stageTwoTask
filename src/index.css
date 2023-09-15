@@ -1,7 +1,7 @@
 .header-container {
   flex-direction: column;
-  height: 450px;
-  width: 100%;
+  height: 500px;
+  width: inherit;
   box-sizing: content-box;
   background-image: url("./images/Poster.jpg");
   background-size: 100%;
@@ -19,13 +19,31 @@ input {
   background: transparent;
   border-radius: 20px;
 }
+.favourite {
 
+  border-radius: 50%;
+  position:absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #f48484;
+  margin-top: 15px;
+  right: 15px;
+  display: flex;
+}
+.favourite:hover {
+background-color: #f75757 ;
+transform: scale(1.1);
+}
+.favourite > img {
+  margin: auto auto;
+
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: start;
   padding: 0px;
-  width: 100%;
+  width: inherit;
 }
 .country-date {
 display: flex;
@@ -59,10 +77,11 @@ display: flex;
 }
 
 .card {
-  margin: 10px 5px;
+  margin: 20px 5px;
   max-width: 200px;
   text-decoration: none;
   color: black;
+  position: relative;
   
 }
 .card:hover {
@@ -94,7 +113,23 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:60px auto;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+}
+.logos > img{
+  margin: 0px 20px;
+}
+.conditions {
 
+  display: flex;
+  font-weight: 600;
+}
 @media (max-width: 300px) {
   .header-container {
     font-size: 0.5em;
