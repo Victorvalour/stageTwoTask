@@ -3,7 +3,7 @@ import "./sidebar.css"
 import Tvlogo from "../images/tv.png"
 import HomeIcon from "../images/Home.png"
 import CameraIcon from "../images/Movie-Projector.png"
-
+import TvShow from "../images/Tv-show.png"
 import Calender from "../images/Calender.png"
 import LogOut from "../images/Logout.png"
 
@@ -21,7 +21,7 @@ export default function Sidebar() {
                 <p>Home</p></div>
                 <div><img src={CameraIcon} alt="Camera Icon" /><p>Movies</p></div>
               
-                <div><img src={LogOut} alt="TV Icon" /><p>TV Series</p></div>
+                <div><img src={TvShow} alt="TV Icon" /><p>TV Series</p></div>
                 <div><img src={Calender} alt="Calender Icon" /><p>Upcoming</p></div>
             </div>
             <div className="bottom-box">
