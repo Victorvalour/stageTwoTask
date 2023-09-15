@@ -4,7 +4,7 @@
     flex-direction: column;
 
     width: 100%;
-    margin-left:275px;
+    margin-left:215px;
     margin-right: 5px;
     color: #404040;
     font-family: 'DM Sans', sans-serif;
@@ -24,7 +24,7 @@
 
 .body-bottom {
     display: flex;
-    padding: 5px;
+    padding: 10px 5px;
     
 }
 .info {

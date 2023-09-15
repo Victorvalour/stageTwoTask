@@ -2,8 +2,8 @@ import React from "react";
 import "./sidebar.css"
 import Tvlogo from "../images/tv.png"
 import HomeIcon from "../images/Home.png"
-import CameraIcon from "../images/Movie Projector.png"
-import TvIcon from "../images/Tv Show.png";
+import CameraIcon from "../images/Movie-Projector.png"
+import TvIcon from "../images/Tv-Show.png";
 import Calender from "../images/Calender.png"
 import LogOut from "../images/Logout.png"
 
