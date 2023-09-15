@@ -15,7 +15,7 @@ export default function Sidebar() {
             <div className="head">
               
             <img src={Tvlogo} alt="TV logo" />
-                <h3>MovieBo</h3>
+                <h3>MovieBox</h3>
             </div>
             <div className="nav">
                 <div><img src={HomeIcon} alt="Home Icon" />

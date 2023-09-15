@@ -16,11 +16,12 @@ export default function Body() {
         })
     }, [])
    return ( <section>
-         <h2>Featured Movie</h2>
+         <h2>Top Rated Movie</h2>
     <div className="movieGrid">
         {movies.map((movieData)=><Card key={movieData.id} {...movieData}/>)}
     </div>
 
+<footer></footer>
 
             <div></div>
     </section>
