@@ -5,8 +5,15 @@ export default function Body(props) {
     console.log(props)
     let rating
     if (props.adult == false) {rating = "PG-13"} else {rating = "PG-18"}
+    const Menuclick =() => {{style={display:"flex"}}}
     return (
         <section className="body">
+           <div className="topnav">
+          <div className="hamburger" onClick={Menuclick}> <div className="bar"></div>
+<div className="bar"></div>
+<div className="bar"></div>
+</div>
+           </div>
        <div className="video-container"></div>
        <div className="body-bottom">
         <div className="bottom-left">

@@ -11,7 +11,7 @@ import LogOut from "../images/Logout.png"
 
 export default function Sidebar() {
     return (
-        <section className="sidebar">
+        <section className="sidebar" >
             <div className="head">
               
             <img src={Tvlogo} alt="TV logo" />
