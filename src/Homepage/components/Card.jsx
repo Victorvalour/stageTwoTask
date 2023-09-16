@@ -4,14 +4,14 @@ import IMDBlogo from "../images/IMDBlogo.png"
 import TomatoIcon from "../images/TomatoIcon.png"
 import Heart from    "../images/Heart.png"
 import { Link } from "react-router-dom"
+import Swal from 'sweetalert2'
 
 const IMGPATH = 'https://image.tmdb.org/t/p/w500'
 
 const  Card =({title, poster_path, popularity, id, release_date, production_countries,  genres}) => {
    const pop = popularity.toFixed(1)
    const handleClick =() => {
-    
-      alert("Added to Favourites")}
+      Swal.fire("Added to Favourites")}
 return (
 
  
@@ -32,7 +32,7 @@ return (
 
          <h3 className="movie-title" data-testid="movie-title">{title}</h3>
 
-         <div className="stats"><img src={IMDBlogo} alt="IMDB Logo" /> <p>{pop}/100</p> <div><img src={TomatoIcon} alt="" /><p></p></div></div>
+         <div className="stats"><img src={IMDBlogo} alt="IMDB Logo" /> <p>{pop}/100</p> <div><img src={TomatoIcon} alt="Tomato icon"/><p></p></div></div>
          <p>Action, adventure</p>
          </div>
      </Link>
