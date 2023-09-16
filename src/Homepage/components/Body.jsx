@@ -24,6 +24,7 @@ export default function Body() {
          return  res.json()
          })
             .then(data=> {
+                console.log(data.results)
             setMovies(data.results.slice(0, 10));
             setIsPending(false);
             setError(null)

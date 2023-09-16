@@ -13,11 +13,11 @@
 input {
   border: 2px solid #ffff;
   text-align: center;
-  width: 350px;
+  width: 250px;
   height: 30px;
   color: #ffff;
   background: transparent;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .favourite {
 
@@ -97,18 +97,34 @@ p {
   max-width: 300px;
   max-height: 250px;
 }
+.imdb {
+margin-right: 50px;
+}
 .description > h3 {
   font-size: 30px;
   margin-bottom: 0px;
+}
+.description > button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #e13448;
+  border: none;
+  margin-top: 10px;
 }
 .description > p {
   font-size: 18px;
 
 }
+.tomato {
+margin-left: 60%;
+}
+i {
+  margin: 0px 5px;
+}
 .stats {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 }
 footer {
   display: flex;
@@ -177,5 +193,42 @@ footer {
     width: 30px;
     height: 30px;
   }
+}
 
+@media (max-width:502px) {
+.header-container {
+  height: 250px;
+}
+.home-nav {
+font-size: 0.8rem;
+margin: 0px;
+padding: 0px;
+flex-basis: 2px;
+}
+.menu {
+  flex-direction: column;
+  width:50px;
+  height: 10px;
+}
+input {
+max-width: 100px;
+}
+.name img {
+  margin: 5px;
+width: 30px;
+}
+.home-nav h3 {
+  margin: 0px;
+  word-wrap:unset;
+}
+.menu img {
+  margin:5px;
+  max-width: 30px;
+}
+.name {
+  flex-direction: column;
+}
+.description {
+  margin-top: 15px;
+}
 }
